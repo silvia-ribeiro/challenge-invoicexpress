@@ -13,6 +13,8 @@
 
 </head>
 
+<script src="js/main.js"></script>
+
 <body>
 	<div class="box">
 
@@ -48,7 +50,7 @@
 							</p>
 							<form>
 								<h3>País</h3>
-								<select id="country" name="country">
+								<select id="country" name="country" oninput="countryLive()">
 									<option value="">País</option>
 									<option value="Afganistan">Afghanistan</option>
 									<option value="Albania">Albania</option>
@@ -300,8 +302,8 @@
 								</select>
 
 								<h3>NIF:</h3>
-								<input id="nif" name="NIF">
-								<p class="valid"><i class="material-icons">done</i>NIF válido</p>
+								<input id="nif" type="number" name="NIF" oninput="nifLive()">
+								<p id="nifvalidation"><i class="material-icons">done</i>NIF válido</p>
 
 								<input type="submit" value="Continuar">
 
@@ -316,7 +318,7 @@
 
 							<form>
 								<div class="hex">#</div>
-								<input type="text" id="color" name="color">
+								<input type="text" id="color" name="color"  oninput="colorLive()">
 								<input type="submit" value="Continuar">
 
 							</form>
@@ -338,10 +340,10 @@
 
 				<div class="factura">
 
-					<div class="logo-color"> </div>
-					<p class="country">País</p>
+					<div class="logo-color" id="logo-color"> </div>
+					<p class="country" id="selectedcountry">País</p>
 					<h1 class="nif-title">NIF: </h1>
-					<p class="nif">00</p>
+					<p class="nif" id="nifnum"></p>
 
 
 				</div>
