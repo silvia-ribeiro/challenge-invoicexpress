@@ -1,0 +1,161 @@
+.left-screen {
+  background-color: white;
+  width: 655px;
+  height: 635px;
+  float: left;
+  padding: 40px;
+
+  h1 {
+    font-size: 24px;
+    color: $grey;
+    margin: 12px 0px 28px 0px;
+  }
+
+  .steps {
+    border-left: solid 1px $light-grey;
+    height: 500px;
+
+    // BUTTON
+
+    input[type="submit"] {
+      background-color: $primary-color;
+      color: $light-text-color;
+      border-radius: 4px;
+      width: 250px;
+      height: 40px;
+      border: none;
+      display: block;
+      margin-top: 30px;
+    }
+
+    //STEP NUMBER STATUS
+
+    .step-number {
+      color: $light-text-color;
+      text-align: center;
+      margin-left: -15px;
+      background: $primary-color;
+      border: solid 1px $primary-color;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      padding: 8px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .step-number-off {
+      color: $light-grey;
+      text-align: center;
+      margin-left: -15px;
+      background: white;
+      border: solid 1px $light-grey;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      padding: 8px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    //STEP TITLE STATUS
+
+    .h2-on {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: $grey;
+      margin-left: 5px;
+    }
+    .h2-off {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: $light-grey;
+      margin-left: 5px;
+    }
+
+    // STEP 1
+    .step1 {
+      p {
+        color: $grey;
+        font-size: 13px;
+        padding: 10px 0px 10px 25px;
+      }
+
+      form {
+        padding: 10px 25px;
+        h3 {
+          color: $grey;
+          padding: 10px 0px;
+          font-weight: bold;
+          font-size: 13px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+        }
+        p {
+          display: inline-block;
+          font-size: 11px;
+          //icon
+          .material-icons {
+            font-size: 11px;
+            margin-right: 5px;
+            font-weight: bold;
+          }
+        }
+        //WHEN NIF VALID:
+        .valid {
+          color: $primary-color;
+          font-weight: bold;
+        }
+        select[id="country"] {
+          width: 300px;
+          height: 40px;
+          border: $light-grey solid 1px;
+          border-radius: 4px;
+          padding-left: 15px;
+          color: $grey;
+          font-size: 13px;
+        }
+        input[id="nif"] {
+          width: 300px;
+          height: 40px;
+          border: $light-grey solid 1px;
+          border-radius: 4px;
+          padding-left: 15px;
+          color: $grey;
+          font-size: 13px;
+        }
+      }
+    }
+
+    // STEP 2
+    .step2 {
+      form {
+        padding: 10px 25px;
+        .hex {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          color: $light-text-color;
+          background-color: $light-grey;
+          border-radius: 4px 0px 0px 4px;
+          text-align: center;
+          padding: 10px;
+          border: $light-grey solid 1px;
+        }
+        input[id="color"] {
+          width: 160px;
+          height: 40px;
+          border: $light-grey solid 1px;
+          border-radius: 0px 4px 4px 0px;
+          margin-left: -5px;
+          padding-left: 10px;
+          color: $primary-color;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

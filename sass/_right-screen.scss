@@ -1,0 +1,71 @@
+.right-screen {
+  background-image: url("../img/background.svg");
+  background-size: cover;
+  background-position: center;
+  width: 345px;
+  height: 635px;
+  float: right;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: -2;
+
+  //BACK INVOICE
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 580px;
+    margin: 30px 50px;
+    background: white;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+
+  //INVOICE STYLE
+
+  .factura {
+    padding: 50px;
+    margin: 10px 60px;
+    width: 450px;
+    height: 580px;
+    background-image: url("../img/factura.png");
+    background-size: 450px 600px;
+    font-size: 12px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    color: $grey;
+
+    //LOGO
+
+    .logo-color {
+      background-color: $primary-color;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    //NIF
+
+    .nif-title {
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .nif {
+      display: inline-block;
+    }
+
+    //PLANT
+  }
+  img[src="img/plant.png"] {
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    margin-top: 350px;
+    margin-left: -75px;
+  }
+}

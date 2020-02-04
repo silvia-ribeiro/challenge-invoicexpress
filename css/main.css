@@ -1,0 +1,324 @@
+*:focus {
+  outline: 0; }
+
+body {
+  background: lightsteelblue; }
+  body .box {
+    font-family: "Oxygen", sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+    height: 685px;
+    width: 1000px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+header .status {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  color: #fff; }
+  header .status li:nth-of-type(1) {
+    background-color: #9d9d9d;
+    width: 250px;
+    padding: 20px 0px;
+    display: inline-block;
+    font-size: 12px; }
+    header .status li:nth-of-type(1) .material-icons {
+      font-size: 12px;
+      margin-left: 5px;
+      font-weight: bold; }
+    header .status li:nth-of-type(1):after {
+      content: " ";
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 25px solid #9d9d9d;
+      position: absolute;
+      margin-top: -18px;
+      margin-left: 85px; }
+  header .status li:nth-of-type(2) {
+    background-color: #fff;
+    color: #18bb80;
+    width: 250px;
+    padding: 20px 0px;
+    display: inline-block;
+    font-size: 12px; }
+    header .status li:nth-of-type(2):after {
+      content: " ";
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 25px solid #fff;
+      position: absolute;
+      margin-top: -18px;
+      margin-left: 101px; }
+  header .status li:nth-of-type(3) {
+    background-color: #ccc;
+    width: 250px;
+    padding: 20px 0px;
+    display: inline-block;
+    font-size: 12px; }
+    header .status li:nth-of-type(3):after {
+      content: " ";
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 25px solid #ccc;
+      position: absolute;
+      margin-top: -18px;
+      margin-left: 98px;
+      z-index: 1; }
+  header .status li:nth-of-type(4) {
+    background-color: #ccc;
+    width: 250px;
+    padding: 20px 0px;
+    display: inline-block;
+    font-size: 12px; }
+    header .status li:nth-of-type(4):before {
+      content: " ";
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 25px solid white;
+      position: absolute;
+      margin-top: -18px;
+      margin-left: -98px;
+      z-index: 0; }
+
+.left-screen {
+  background-color: white;
+  width: 655px;
+  height: 635px;
+  float: left;
+  padding: 40px; }
+  .left-screen h1 {
+    font-size: 24px;
+    color: #707070;
+    margin: 12px 0px 28px 0px; }
+  .left-screen .steps {
+    border-left: solid 1px #ccc;
+    height: 500px; }
+    .left-screen .steps input[type="submit"] {
+      background-color: #18bb80;
+      color: #fff;
+      border-radius: 4px;
+      width: 250px;
+      height: 40px;
+      border: none;
+      display: block;
+      margin-top: 30px; }
+    .left-screen .steps .step-number {
+      color: #fff;
+      text-align: center;
+      margin-left: -15px;
+      background: #18bb80;
+      border: solid 1px #18bb80;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      padding: 8px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold; }
+    .left-screen .steps .step-number-off {
+      color: #ccc;
+      text-align: center;
+      margin-left: -15px;
+      background: white;
+      border: solid 1px #ccc;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      padding: 8px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold; }
+    .left-screen .steps .h2-on {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #707070;
+      margin-left: 5px; }
+    .left-screen .steps .h2-off {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ccc;
+      margin-left: 5px; }
+    .left-screen .steps .step1 p {
+      color: #707070;
+      font-size: 13px;
+      padding: 10px 0px 10px 25px; }
+    .left-screen .steps .step1 form {
+      padding: 10px 25px; }
+      .left-screen .steps .step1 form h3 {
+        color: #707070;
+        padding: 10px 0px;
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 5px;
+        margin-top: 10px; }
+      .left-screen .steps .step1 form p {
+        display: inline-block;
+        font-size: 11px; }
+        .left-screen .steps .step1 form p .material-icons {
+          font-size: 11px;
+          margin-right: 5px;
+          font-weight: bold; }
+      .left-screen .steps .step1 form .valid {
+        color: #18bb80;
+        font-weight: bold; }
+      .left-screen .steps .step1 form select[id="country"] {
+        width: 300px;
+        height: 40px;
+        border: #ccc solid 1px;
+        border-radius: 4px;
+        padding-left: 15px;
+        color: #707070;
+        font-size: 13px; }
+      .left-screen .steps .step1 form input[id="nif"] {
+        width: 300px;
+        height: 40px;
+        border: #ccc solid 1px;
+        border-radius: 4px;
+        padding-left: 15px;
+        color: #707070;
+        font-size: 13px; }
+    .left-screen .steps .step2 form {
+      padding: 10px 25px; }
+      .left-screen .steps .step2 form .hex {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        background-color: #ccc;
+        border-radius: 4px 0px 0px 4px;
+        text-align: center;
+        padding: 10px;
+        border: #ccc solid 1px; }
+      .left-screen .steps .step2 form input[id="color"] {
+        width: 160px;
+        height: 40px;
+        border: #ccc solid 1px;
+        border-radius: 0px 4px 4px 0px;
+        margin-left: -5px;
+        padding-left: 10px;
+        color: #18bb80;
+        font-size: 13px; }
+
+.right-screen {
+  background-image: url("../img/background.svg");
+  background-size: cover;
+  background-position: center;
+  width: 345px;
+  height: 635px;
+  float: right;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: -2; }
+  .right-screen:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 580px;
+    margin: 30px 50px;
+    background: white;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1; }
+  .right-screen .factura {
+    padding: 50px;
+    margin: 10px 60px;
+    width: 450px;
+    height: 580px;
+    background-image: url("../img/factura.png");
+    background-size: 450px 600px;
+    font-size: 12px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    color: #707070; }
+    .right-screen .factura .logo-color {
+      background-color: #18bb80;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      margin-bottom: 10px; }
+    .right-screen .factura .nif-title {
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: bold; }
+    .right-screen .factura .nif {
+      display: inline-block; }
+  .right-screen img[src="img/plant.png"] {
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    margin-top: 350px;
+    margin-left: -75px; }

@@ -1,0 +1,100 @@
+header {
+  .status {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    color: $light-text-color;
+
+    //CRIAR CONTA
+    li:nth-of-type(1) {
+      background-color: $dark-grey;
+      width: 250px;
+      padding: 20px 0px;
+      display: inline-block;
+      font-size: 12px;
+      .material-icons {
+        font-size: 12px;
+        margin-left: 5px;
+        font-weight: bold;
+      }
+      //arrow
+      &:after {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid $dark-grey;
+        position: absolute;
+        margin-top: -18px;
+        margin-left: 85px;
+      }
+    }
+
+    //PREPARAR
+    li:nth-of-type(2) {
+      background-color: $light-text-color;
+      color: $primary-color;
+      width: 250px;
+      padding: 20px 0px;
+      display: inline-block;
+      font-size: 12px;
+      //arrow
+      &:after {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid $light-text-color;
+        position: absolute;
+        margin-top: -18px;
+        margin-left: 101px;
+      }
+    }
+
+    //APRENDER
+    li:nth-of-type(3) {
+      background-color: $light-grey;
+      width: 250px;
+      padding: 20px 0px;
+      display: inline-block;
+      font-size: 12px;
+      //arrow
+      &:after {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid $light-grey;
+        position: absolute;
+        margin-top: -18px;
+        margin-left: 98px;
+        z-index: 1;
+      }
+    }
+
+    //APRENDER 2
+    li:nth-of-type(4) {
+      background-color: $light-grey;
+      width: 250px;
+      padding: 20px 0px;
+      display: inline-block;
+      font-size: 12px;
+      &:before {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid white;
+        position: absolute;
+        margin-top: -18px;
+        margin-left: -98px;
+        z-index: 0;
+      }
+    }
+  }
+}
