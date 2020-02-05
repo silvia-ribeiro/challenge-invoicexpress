@@ -6,10 +6,21 @@ function countryLive() {
 
 // NIF -LIVE PREVIEW AND VALIDATION
 function nifLive() {
+    //live preview:
     let nif = document.getElementById("nif").value;
     document.getElementById("nifnum").innerHTML = nif;
-    if (nif.length == 9 /* confirmar o que torna um nif valio para além do numero de numeros*/) {
-        document.getElementById("nifvalidation").classList.add("valid");
+    //validation:
+    if (nif.length == 9) {                                                                  //nif have 9 numbers       
+        let p = nif.charAt(0);
+        if (p == '1' || p == '2' || p == '5' || p == '6' || p == '8' || p == '9') {           //nif first number has to be 1 or 2 (ind person) 5,6,8 or 9 (collective person and business)
+            //checkDigit
+            const soma = nif[0] * 9 + nif[1] * 8 + nif[2] * 7 + nif[3] * 6 + nif[4] * 5 + nif[5] * 4 + nif[6] * 3 + nif[7] * 2;
+            const resto = (Number(soma) % 11);
+            let checkDigit = resto < 2 ? 0 : 11 - resto;
+            if (checkDigit = nif.charAt(8)) {
+                document.getElementById("nifvalidation").classList.add("valid");
+            }
+        }
     } else {
         document.getElementById("nifvalidation").classList.remove("valid");
     }
