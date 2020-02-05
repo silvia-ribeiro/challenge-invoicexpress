@@ -43,9 +43,9 @@
 				<div class="steps">
 					<!--STEP 1 -->
 					<div class="step1">
-						<div class="step-number">1</div>
-						<h2 class="h2-on">Defina os seus dados</h2>
-						<div class="step1-content">
+						<div class="step-number" id="step1num">1</div>
+						<h2 class="h2-on" id="step1title">Defina os seus dados</h2>
+						<div class="step1-content" id="step1content">
 							<p>Adicione o País e o NIF. Os dados apresentados serão pré-preenchidos nas suas facturas.
 							</p>
 							<form>
@@ -305,21 +305,21 @@
 								<input id="nif" type="number" name="NIF" oninput="nifLive()">
 								<p id="nifvalidation"><i class="material-icons">done</i>NIF válido</p>
 
-								<input type="submit" value="Continuar">
+								<input type="submit" value="Continuar" onclick="step1end(); return false;">
 
 							</form>
 						</div>
 					</div>
 					<!-- STEP 2-->
 					<div class="step2">
-						<div class="step-number-off">4</div>
-						<h2 class="h2-off">Defina as suas cores</h2>
-						<div class="step2-content">
+						<div class="step-number-off" id="step2num">4</div>
+						<h2 class="h2-off" id="step2title">Defina as suas cores</h2>
+						<div class="step2-content" id="step2content">
 
 							<form>
 								<div class="hex">#</div>
 								<input type="text" id="color" name="color"  oninput="colorLive()">
-								<input type="submit" value="Continuar">
+								<input type="submit" value="Continuar" onclick="step2end(); return false;" >
 
 							</form>
 						</div>

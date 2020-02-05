@@ -214,7 +214,8 @@ header .status {
       font-size: 13px;
       padding: 10px 0px 10px 25px; }
     .left-screen .steps .step1 form {
-      padding: 10px 25px; }
+      padding: 10px 25px;
+      margin-bottom: 145px; }
       .left-screen .steps .step1 form h3 {
         color: #707070;
         padding: 10px 0px;
@@ -248,27 +249,32 @@ header .status {
         padding-left: 15px;
         color: #707070;
         font-size: 13px; }
-    .left-screen .steps .step2 form {
-      padding: 10px 25px; }
-      .left-screen .steps .step2 form .hex {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        color: #fff;
-        background-color: #ccc;
-        border-radius: 4px 0px 0px 4px;
-        text-align: center;
-        padding: 10px;
-        border: #ccc solid 1px; }
-      .left-screen .steps .step2 form input[id="color"] {
-        width: 160px;
-        height: 40px;
-        border: #ccc solid 1px;
-        border-radius: 0px 4px 4px 0px;
-        margin-left: -5px;
-        padding-left: 10px;
-        color: #18bb80;
-        font-size: 13px; }
+    .left-screen .steps .step2 {
+      margin-top: 20px; }
+      .left-screen .steps .step2 .step2-content {
+        display: none; }
+      .left-screen .steps .step2 form {
+        padding: 10px 25px; }
+        .left-screen .steps .step2 form .hex {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          color: #fff;
+          background-color: #ccc;
+          border: #ccc solid 1px;
+          border-radius: 4px 0px 0px 4px;
+          text-align: center;
+          padding: 10px;
+          border: #ccc solid 1px; }
+        .left-screen .steps .step2 form input[id="color"] {
+          width: 160px;
+          height: 40px;
+          border: #ccc solid 1px;
+          border-radius: 0px 4px 4px 0px;
+          margin-left: -5px;
+          padding-left: 10px;
+          color: #18bb80;
+          font-size: 13px; }
 
 .right-screen {
   background-image: url("../img/background.svg");
@@ -322,3 +328,35 @@ header .status {
     width: 200px;
     margin-top: 350px;
     margin-left: -75px; }
+
+.fade-out {
+  -webkit-animation: fadeOut ease 1.5s;
+  animation: fadeOut ease 1.5s; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.fade-in {
+  -webkit-animation: fadeIn ease 1.5s;
+  animation: fadeIn ease 1.5s; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

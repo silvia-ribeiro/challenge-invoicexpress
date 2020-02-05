@@ -86,6 +86,7 @@
 
       form {
         padding: 10px 25px;
+        margin-bottom: 145px;
         h3 {
           color: $grey;
           padding: 10px 0px;
@@ -132,6 +133,10 @@
 
     // STEP 2
     .step2 {
+      margin-top:20px;
+      .step2-content {
+        display: none; //display none at step1
+      }
       form {
         padding: 10px 25px;
         .hex {
@@ -140,6 +145,7 @@
           height: 40px;
           color: $light-text-color;
           background-color: $light-grey;
+          border: $light-grey solid 1px;
           border-radius: 4px 0px 0px 4px;
           text-align: center;
           padding: 10px;
