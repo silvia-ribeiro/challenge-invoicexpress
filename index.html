@@ -13,6 +13,8 @@
 
 </head>
 
+<script src="js/main.js"></script>
+
 <body>
 	<div class="box">
 
@@ -41,14 +43,14 @@
 				<div class="steps">
 					<!--STEP 1 -->
 					<div class="step1">
-						<div class="step-number">1</div>
-						<h2 class="h2-on">Defina os seus dados</h2>
-						<div class="step1-content">
+						<div class="step-number" id="step1num">1</div>
+						<h2 class="h2-on" id="step1title">Defina os seus dados</h2>
+						<div class="step1-content" id="step1content">
 							<p>Adicione o País e o NIF. Os dados apresentados serão pré-preenchidos nas suas facturas.
 							</p>
 							<form>
 								<h3>País</h3>
-								<select id="country" name="country">
+								<select id="country" name="country" oninput="countryLive()">
 									<option value="">País</option>
 									<option value="Afganistan">Afghanistan</option>
 									<option value="Albania">Albania</option>
@@ -300,24 +302,24 @@
 								</select>
 
 								<h3>NIF:</h3>
-								<input id="nif" name="NIF">
-								<p class="valid"><i class="material-icons">done</i>NIF válido</p>
+								<input id="nif" type="number" name="NIF" oninput="nifLive()">
+								<p id="nifvalidation"><i class="material-icons">done</i>NIF válido</p>
 
-								<input type="submit" value="Continuar">
+								<input type="submit" value="Continuar" onclick="step1end(); return false;">
 
 							</form>
 						</div>
 					</div>
 					<!-- STEP 2-->
 					<div class="step2">
-						<div class="step-number-off">4</div>
-						<h2 class="h2-off">Defina as suas cores</h2>
-						<div class="step2-content">
+						<div class="step-number-off" id="step2num">4</div>
+						<h2 class="h2-off" id="step2title">Defina as suas cores</h2>
+						<div class="step2-content" id="step2content">
 
 							<form>
 								<div class="hex">#</div>
-								<input type="text" id="color" name="color">
-								<input type="submit" value="Continuar">
+								<input type="text" id="color" name="color"  oninput="colorLive()">
+								<input type="submit" value="Continuar" onclick="step2end(); return false;" >
 
 							</form>
 						</div>
@@ -338,10 +340,10 @@
 
 				<div class="factura">
 
-					<div class="logo-color"> </div>
-					<p class="country">País</p>
+					<div class="logo-color" id="logo-color"> </div>
+					<p class="country" id="selectedcountry">País</p>
 					<h1 class="nif-title">NIF: </h1>
-					<p class="nif">00</p>
+					<p class="nif" id="nifnum"></p>
 
 
 				</div>

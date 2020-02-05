@@ -74,12 +74,14 @@ table {
 header .status {
   font-weight: bold;
   width: 100%;
+  height: 50px;
   text-align: center;
   font-size: 0;
   color: #fff; }
   header .status li:nth-of-type(1) {
     background-color: #9d9d9d;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -93,14 +95,15 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid #9d9d9d;
+      border-left: 12px solid #9d9d9d;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: 85px; }
   header .status li:nth-of-type(2) {
     background-color: #fff;
     color: #18bb80;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -110,13 +113,14 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid #fff;
+      border-left: 12px solid #fff;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: 101px; }
   header .status li:nth-of-type(3) {
     background-color: #ccc;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -126,14 +130,15 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid #ccc;
+      border-left: 12px solid #ccc;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: 98px;
       z-index: 1; }
   header .status li:nth-of-type(4) {
     background-color: #ccc;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -143,9 +148,9 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid white;
+      border-left: 12px solid white;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: -98px;
       z-index: 0; }
 
@@ -154,7 +159,8 @@ header .status {
   width: 655px;
   height: 635px;
   float: left;
-  padding: 40px; }
+  padding: 40px;
+  overflow: hidden; }
   .left-screen h1 {
     font-size: 24px;
     color: #707070;
@@ -214,7 +220,8 @@ header .status {
       font-size: 13px;
       padding: 10px 0px 10px 25px; }
     .left-screen .steps .step1 form {
-      padding: 10px 25px; }
+      padding: 10px 25px;
+      margin-bottom: 145px; }
       .left-screen .steps .step1 form h3 {
         color: #707070;
         padding: 10px 0px;
@@ -248,27 +255,33 @@ header .status {
         padding-left: 15px;
         color: #707070;
         font-size: 13px; }
-    .left-screen .steps .step2 form {
-      padding: 10px 25px; }
-      .left-screen .steps .step2 form .hex {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        color: #fff;
-        background-color: #ccc;
-        border-radius: 4px 0px 0px 4px;
-        text-align: center;
-        padding: 10px;
-        border: #ccc solid 1px; }
-      .left-screen .steps .step2 form input[id="color"] {
-        width: 160px;
-        height: 40px;
-        border: #ccc solid 1px;
-        border-radius: 0px 4px 4px 0px;
-        margin-left: -5px;
-        padding-left: 10px;
-        color: #18bb80;
-        font-size: 13px; }
+    .left-screen .steps .step2 {
+      margin-top: 20px; }
+      .left-screen .steps .step2 .step2-content {
+        display: none;
+        overflow: hidden; }
+      .left-screen .steps .step2 form {
+        padding: 10px 25px; }
+        .left-screen .steps .step2 form .hex {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          color: #fff;
+          background-color: #ccc;
+          border: #ccc solid 1px;
+          border-radius: 4px 0px 0px 4px;
+          text-align: center;
+          padding: 10px;
+          border: #ccc solid 1px; }
+        .left-screen .steps .step2 form input[id="color"] {
+          width: 160px;
+          height: 40px;
+          border: #ccc solid 1px;
+          border-radius: 0px 4px 4px 0px;
+          margin-left: -5px;
+          padding-left: 10px;
+          color: #18bb80;
+          font-size: 13px; }
 
 .right-screen {
   background-image: url("../img/background.svg");
@@ -322,3 +335,67 @@ header .status {
     width: 200px;
     margin-top: 350px;
     margin-left: -75px; }
+
+.fade-out {
+  -webkit-animation: fadeOut ease 1s;
+  animation: fadeOut ease 1s; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.fade-in {
+  -webkit-animation: fadeIn ease 1s;
+  animation: fadeIn ease 1s; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.up {
+  -webkit-animation: upAni 1s;
+  animation: upAni 1s; }
+
+@-webkit-keyframes upAni {
+  0% {
+    margin-top: 400px; }
+  100% {
+    margin-top: 0px; } }
+
+@keyframes upAni {
+  0% {
+    margin-top: 400px; }
+  100% {
+    margin-top: 0px; } }
+
+.down {
+  -webkit-animation: downAni 1s;
+  animation: downAni 1s; }
+
+@-webkit-keyframes downAni {
+  0% {
+    margin-top: 0px; }
+  100% {
+    margin-top: 425px; } }
+
+@keyframes downAni {
+  0% {
+    margin-top: 0px; }
+  100% {
+    margin-top: 425px; } }
