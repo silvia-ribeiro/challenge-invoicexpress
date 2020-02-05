@@ -74,12 +74,14 @@ table {
 header .status {
   font-weight: bold;
   width: 100%;
+  height: 50px;
   text-align: center;
   font-size: 0;
   color: #fff; }
   header .status li:nth-of-type(1) {
     background-color: #9d9d9d;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -93,14 +95,15 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid #9d9d9d;
+      border-left: 12px solid #9d9d9d;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: 85px; }
   header .status li:nth-of-type(2) {
     background-color: #fff;
     color: #18bb80;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -110,13 +113,14 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid #fff;
+      border-left: 12px solid #fff;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: 101px; }
   header .status li:nth-of-type(3) {
     background-color: #ccc;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -126,14 +130,15 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid #ccc;
+      border-left: 12px solid #ccc;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: 98px;
       z-index: 1; }
   header .status li:nth-of-type(4) {
     background-color: #ccc;
     width: 250px;
+    height: 50px;
     padding: 20px 0px;
     display: inline-block;
     font-size: 12px; }
@@ -143,9 +148,9 @@ header .status {
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 25px solid white;
+      border-left: 12px solid white;
       position: absolute;
-      margin-top: -18px;
+      margin-top: -20px;
       margin-left: -98px;
       z-index: 0; }
 
