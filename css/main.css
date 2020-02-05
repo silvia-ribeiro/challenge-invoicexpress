@@ -159,7 +159,8 @@ header .status {
   width: 655px;
   height: 635px;
   float: left;
-  padding: 40px; }
+  padding: 40px;
+  overflow: hidden; }
   .left-screen h1 {
     font-size: 24px;
     color: #707070;
@@ -257,7 +258,8 @@ header .status {
     .left-screen .steps .step2 {
       margin-top: 20px; }
       .left-screen .steps .step2 .step2-content {
-        display: none; }
+        display: none;
+        overflow: hidden; }
       .left-screen .steps .step2 form {
         padding: 10px 25px; }
         .left-screen .steps .step2 form .hex {
@@ -335,8 +337,8 @@ header .status {
     margin-left: -75px; }
 
 .fade-out {
-  -webkit-animation: fadeOut ease 1.5s;
-  animation: fadeOut ease 1.5s; }
+  -webkit-animation: fadeOut ease 1s;
+  animation: fadeOut ease 1s; }
 
 @-webkit-keyframes fadeOut {
   0% {
@@ -351,8 +353,8 @@ header .status {
     opacity: 0; } }
 
 .fade-in {
-  -webkit-animation: fadeIn ease 1.5s;
-  animation: fadeIn ease 1.5s; }
+  -webkit-animation: fadeIn ease 1s;
+  animation: fadeIn ease 1s; }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -365,3 +367,35 @@ header .status {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.up {
+  -webkit-animation: upAni 1s;
+  animation: upAni 1s; }
+
+@-webkit-keyframes upAni {
+  0% {
+    margin-top: 400px; }
+  100% {
+    margin-top: 0px; } }
+
+@keyframes upAni {
+  0% {
+    margin-top: 400px; }
+  100% {
+    margin-top: 0px; } }
+
+.down {
+  -webkit-animation: downAni 1s;
+  animation: downAni 1s; }
+
+@-webkit-keyframes downAni {
+  0% {
+    margin-top: 0px; }
+  100% {
+    margin-top: 425px; } }
+
+@keyframes downAni {
+  0% {
+    margin-top: 0px; }
+  100% {
+    margin-top: 425px; } }

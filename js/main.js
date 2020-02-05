@@ -1,12 +1,12 @@
-// COUNTRY - LIVE PREVIEW
+// COUNTRY - LIVE UPDATE
 function countryLive() {
     let country = document.getElementById("country").value;
     document.getElementById("selectedcountry").innerHTML = country;
 }
 
-// NIF -LIVE PREVIEW AND VALIDATION
+// NIF -LIVE UPDATE AND VALIDATION
 function nifLive() {
-    //live preview:
+    //live update:
     let nif = document.getElementById("nif").value;
     document.getElementById("nifnum").innerHTML = nif;
     //validation:
@@ -26,7 +26,7 @@ function nifLive() {
     }
 }
 
-// LOGO COLOR - LIVE PREVIEW
+// LOGO COLOR - LIVE UPDATE
 function colorLive() {
     let logocolor = document.getElementById("color").value;
     document.getElementById("logo-color").style.backgroundColor = "#" + logocolor;
@@ -52,6 +52,12 @@ function step1end() {
     setTimeout(function () {
         document.getElementById("step2content").classList.add("fade-in");
     }, 1000);
+    //Step2 dot animation up 
+    setTimeout(function () {
+        document.getElementById("step2num").classList.remove("down")
+        document.getElementById("step2num").classList.add("up");
+    }, 1000);
+
 }
 
 function step2end() {
@@ -73,6 +79,9 @@ function step2end() {
     setTimeout(function () {
         document.getElementById("step1content").classList.add("fade-in");
     }, 1000);
+    //Step2 dot animation down 
+        document.getElementById("step2num").classList.remove("up")
+        document.getElementById("step2num").classList.add("down")
 }
 
 

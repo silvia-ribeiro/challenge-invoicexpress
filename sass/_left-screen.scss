@@ -4,6 +4,7 @@
   height: 635px;
   float: left;
   padding: 40px;
+  overflow: hidden;
 
   h1 {
     font-size: 24px;
@@ -135,7 +136,8 @@
     .step2 {
       margin-top:20px;
       .step2-content {
-        display: none; //display none at step1
+        display: none; //display none at step1        
+        overflow: hidden;
       }
       form {
         padding: 10px 25px;
